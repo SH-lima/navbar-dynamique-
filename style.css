@@ -1,0 +1,57 @@
+nav {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ul {
+    display:flex;
+    justify-content:flex-end;
+    width:60%;
+  }
+  li{
+    list-style:none;
+    text-transform:uppercase;
+    padding: 15px;
+  }
+  i {
+      position: relative;
+  }
+   @media screen and (min-width:600px){
+        nav i.fas {
+          display: none ;
+        }
+        ul {
+            display:flex;
+            justify-content:flex-end;
+            width:60%;
+          }
+          li{
+            list-style:none;
+            text-transform:uppercase;
+            padding: 15px;
+          }
+    } 
+    @media screen and (max-width:600px){
+      i:hover::after {
+        content: "HOME CONTACT SERVICES";
+        font-size: 14px;
+        padding: 20px;
+        position: absolute;
+        line-height: 25px;
+        right: 15%;
+        padding: 10px;
+        margin: 0px 20px;
+        background-color:  rgba(200, 243, 229, 0.8);
+        color: black;
+        border-radius: 5px;
+        border: 0.5 solid rgba(127, 255, 212, 0.3);
+      }
+      nav{
+          justify-content: space-around;
+      }
+      ul {
+          display: none;
+      }
+  }
